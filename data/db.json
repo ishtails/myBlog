@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Promotion interview tips for tech: How to sell your value",
+      "author": "Mattias Andersson",
+      "body": "There is a myth most tech professionals believe, and it’s this: “Everyone knows what I’m working on, and how important it is.” We often assume that the work we do is so important, it automatically communicates its value. Of course “they” know that you’re the one who designed the whole architecture of a complex software system, or single-handedly manage those important cloud instances—right?! That was vital work, after all! \n\nSadly, this is wrong! You might know what you work on, and that it’s very important, but nobody else does. In fact, if you asked them, you might be surprised to find out that other people have a vastly different perspective on the work that you do (so much that you might wonder if they know what you do for a job at all).  \n\nThis is called the Spotlight effect, the psychological phenomenon by which “people tend to believe they are being noticed more than they really are.” Research has empirically shown drastically overestimating your effect on others is very common. ",
+      "id": 1
+    },
+    {
+      "title": "Code review checklist: 7 steps to level up your review process",
+      "author": "Pluralsight",
+      "body": "A code review is when someone other than an author inspects source code and looks for issues. Whether you have to give code reviews or sit on the receiving end, you’ve seen the latencies they can add to your workflow. Thankfully, a great code review checklist can speed up the process and increase the thoroughness of code reviews.\n\nFollowing code review best practices can benefit your business and the final product. Whether your reviews rely on multiple people, automation, or asynchronous feedback, our guide covers how you can be a better code reviewer. To go the extra mile, we’ll share resources every developer should have, including our code review checklist template.",
+      "id": 2
+    }
+  ]
+}
