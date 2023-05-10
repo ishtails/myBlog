@@ -6,7 +6,7 @@ To install and run the project, follow these steps:
 
 Clone the repository to your local machine</br> 
 Install dependencies using npm install or yarn install</br> 
-Start the JSON server by running **json-server --watch db.json --port 8000** in the project root directory</br> 
+Start the JSON server by running **json-server --watch data/db.json --port 8000** in the project root directory</br> 
 Start the React app by running npm start or yarn start in the project root directory</br> 
 Open your browser and navigate to http://localhost:3000 to view the website</br> 
 
