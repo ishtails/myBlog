@@ -6,7 +6,7 @@ export const NewForm = () => {
   const [author, setAuthor] = useState("");
   const [body, setBody] = useState("");
   const [submitting, setSubmitting] = useState(false);
-  const [messageSuccess, setMessageSuccess] = useState("");
+  const [message, setMessage] = useState("");
 
   const history = useHistory()
 
@@ -15,7 +15,7 @@ export const NewForm = () => {
     const data = { title, author, body };
 
     setSubmitting(true);
-    setMessageSuccess("")
+    setMessage("")
 
     setTimeout(() => {
       fetch("http://localhost:8000/blogs", {
@@ -23,7 +23,7 @@ export const NewForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       }).then(() => {
-        setMessageSuccess("Submitted Successfully!")
+        setMessage("Submitted Successfully!")
         setSubmitting(false);
         setTitle("");
         setBody("");
@@ -31,7 +31,10 @@ export const NewForm = () => {
         setTimeout(() => {
           history.push('/')
         }, 1000);
-      }).catch(err=>console.log(err))
+      }).catch(err=>{
+        setSubmitting(false)
+        setMessage("Submission failed!")
+        console.log(err)})
     }, 1000);
   };
 
@@ -107,7 +110,7 @@ export const NewForm = () => {
           </button>
         )}
       </form>
-      <p>{messageSuccess}</p>
+      <p>{message}</p>
     </div>
   );
 };
